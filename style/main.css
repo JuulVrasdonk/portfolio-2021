@@ -1,0 +1,146 @@
+/**********
+    Colors
+        ********/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-left: 2.67vw;
+  padding-right: 2.67vw;
+  height: 400vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, strong, li {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.mobileinvisible strong, .mobileinvisible img {
+  display: none;
+}
+
+header nav {
+  margin-top: 2.67vw;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 27.2px;
+}
+
+header nav ul li:first-of-type, header nav ul li:last-of-type {
+  height: 100%;
+  padding-left: 3px;
+}
+
+header nav ul li:first-of-type a, header nav ul li:last-of-type a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12.61px;
+  font-weight: 500;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li:first-of-type a div, header nav ul li:last-of-type a div {
+  width: 25.2px;
+  height: 25.2px;
+  margin-left: 1px;
+  background-color: #EBEBEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+header nav ul li:first-of-type a span, header nav ul li:last-of-type a span {
+  margin: 0 13px 0 5px;
+}
+
+header nav ul li:first-of-type a svg, header nav ul li:last-of-type a svg {
+  position: relative;
+  left: -1px;
+  top: -0.1px;
+  width: 12px;
+}
+
+header h2, header h1 {
+  margin-left: 7.73vw;
+}
+
+header h2 {
+  font-size: 32.9432px;
+}
+
+header h2:first-of-type {
+  margin-top: 14.9vh;
+  margin-bottom: 20px;
+}
+
+header h2:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+header h2:nth-of-type(2) > a {
+  text-decoration: underline;
+}
+
+header h2 > span {
+  font-weight: 300;
+}
+
+header h1 {
+  font-size: 98.8296px;
+  text-transform: uppercase;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  position: relative;
+  top: 23px;
+  left: 219px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header > p {
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  position: absolute;
+  bottom: 20px;
+  right: -10px;
+}
+/*# sourceMappingURL=main.css.map */
