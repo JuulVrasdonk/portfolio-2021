@@ -11,6 +11,9 @@
 body {
   padding-left: 2.67vw;
   padding-right: 2.67vw;
+}
+
+body > div:first-of-type {
   height: 400vh;
 }
 
@@ -130,6 +133,7 @@ header h1 {
   left: 219px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  height: 530px;
 }
 
 header > p {
@@ -142,5 +146,38 @@ header > p {
   position: absolute;
   bottom: 20px;
   right: -10px;
+}
+
+.chapter1 {
+  margin-left: 7.73vw;
+}
+
+.chapter1 .chapter1bookmark {
+  font-size: 10.99px;
+  margin-top: 36.34vh;
+  margin-bottom: 47px;
+}
+
+.chapter1 .chapter1bookmark img {
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+}
+
+.chapter1 h2 {
+  font-size: 36.63px;
+  margin-bottom: 36.34vh;
+}
+
+.chapter1 h2 span {
+  margin-right: 6em;
+}
+
+.chapter1 section:nth-of-type(2) > img {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  margin-bottom: 50vh;
 }
 /*# sourceMappingURL=main.css.map */
