@@ -173,11 +173,14 @@ header > p {
   margin-right: 6em;
 }
 
-.chapter1 section:nth-of-type(2) > img {
+.chapter1 section:nth-of-type(2) > div {
   height: 100vh;
   width: 100vw;
+  margin-bottom: 50vh;
   position: absolute;
   left: 0;
-  margin-bottom: 50vh;
+  background-image: url("../img/Juul-Vrasdonk.jpg");
+  background-position: center;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
