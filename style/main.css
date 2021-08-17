@@ -148,39 +148,229 @@ header > p {
   right: -10px;
 }
 
-.chapter1 {
+.chapter1, .chapter2 section:first-of-type {
   margin-left: 7.73vw;
 }
 
-.chapter1 .chapter1bookmark {
+.chapter1, .chapter2 {
+  overflow: hidden;
+}
+
+.chapter1 .chapter1bookmark, .chapter1 .chapter2bookmark, .chapter2 .chapter1bookmark, .chapter2 .chapter2bookmark {
   font-size: 10.99px;
   margin-top: 36.34vh;
   margin-bottom: 47px;
 }
 
-.chapter1 .chapter1bookmark img {
+.chapter1 .chapter1bookmark img, .chapter1 .chapter2bookmark img, .chapter2 .chapter1bookmark img, .chapter2 .chapter2bookmark img {
   position: relative;
   top: 2px;
   margin-right: 2px;
 }
 
-.chapter1 h2 {
+.chapter1 h2, .chapter2 h2 {
   font-size: 36.63px;
   margin-bottom: 36.34vh;
 }
 
-.chapter1 h2 span {
+.chapter1 h2 span, .chapter2 h2 span {
   margin-right: 6em;
 }
 
-.chapter1 section:nth-of-type(2) > div {
+.chapter1 .picturecontainer, .chapter2 .picturecontainer {
   height: 100vh;
   width: 100vw;
-  margin-bottom: 50vh;
+  margin-bottom: 20.7vh;
+}
+
+.chapter1 .pictureme, .chapter2 .pictureme {
+  height: 100%;
+  width: 100%;
   position: absolute;
   left: 0;
   background-image: url("../img/Juul-Vrasdonk.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.chapter1 section:nth-of-type(2) p, .chapter2 section:nth-of-type(2) p {
+  line-height: 1.8;
+}
+
+.chapter1 section:nth-of-type(2) p:first-of-type, .chapter2 section:nth-of-type(2) p:first-of-type {
+  margin-bottom: 48px;
+}
+
+.chapter1 section:nth-of-type(2) p:nth-of-type(2), .chapter2 section:nth-of-type(2) p:nth-of-type(2) {
+  margin-bottom: 48px;
+}
+
+.chapter1 section:nth-of-type(2) p:nth-of-type(3), .chapter2 section:nth-of-type(2) p:nth-of-type(3) {
+  background-color: #F6F6F6;
+  padding: 5px 10px 5px 10px;
+  color: #A3A3A3;
+  border-radius: 10px;
+  line-height: 1.25;
+  margin-bottom: 20.7vh;
+}
+
+.chapter1 section:nth-of-type(2) p:nth-of-type(3) strong, .chapter2 section:nth-of-type(2) p:nth-of-type(3) strong {
+  font-weight: 400;
+  color: #000000;
+}
+
+.chapter2 section:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chapter2 section:last-of-type article {
+  position: relative;
+  width: 128px;
+  height: 34.77px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chapter2 section:last-of-type article strong {
+  font-size: 24.42px;
+}
+
+.chapter2 section:last-of-type article .line {
+  height: .79px;
+  width: 11.06px;
+  background-color: #000;
+}
+
+.chapter2 section:last-of-type article .ball {
+  height: 18.96px;
+  width: 18.96px;
+  background-color: #147CE5;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 53px;
+  opacity: .1;
+  -webkit-transition: all 0.75s cubic-bezier(0.71, 0, 0.33, 1.56) 0ms;
+  transition: all 0.75s cubic-bezier(0.71, 0, 0.33, 1.56) 0ms;
+}
+
+.chapter2 section:last-of-type article:hover .ball {
+  left: 0;
+}
+
+.chapter2 section:last-of-type .ball.one {
+  opacity: 1;
+}
+
+.chapter2 section:last-of-type .ball.two {
+  -webkit-transition-delay: 3ms;
+          transition-delay: 3ms;
+}
+
+.chapter2 section:last-of-type .ball.three {
+  -webkit-transition-delay: 6ms;
+          transition-delay: 6ms;
+}
+
+.chapter2 section:last-of-type .ball.four {
+  -webkit-transition-delay: 9ms;
+          transition-delay: 9ms;
+}
+
+.chapter2 section:last-of-type .ball.five {
+  -webkit-transition-delay: 11ms;
+          transition-delay: 11ms;
+}
+
+.chapter2 section:last-of-type .ball.six {
+  -webkit-transition-delay: 14ms;
+          transition-delay: 14ms;
+}
+
+.chapter2 section:last-of-type .ball.seven {
+  -webkit-transition-delay: 17ms;
+          transition-delay: 17ms;
+}
+
+.chapter2 section:last-of-type .ball.eight {
+  -webkit-transition-delay: 20ms;
+          transition-delay: 20ms;
+}
+
+.chapter2 section:last-of-type .ball.nine {
+  -webkit-transition-delay: 23ms;
+          transition-delay: 23ms;
+}
+
+.chapter2 section:last-of-type .ball.ten {
+  -webkit-transition-delay: 26ms;
+          transition-delay: 26ms;
+}
+
+.chapter2 section:last-of-type .ball.eleven {
+  -webkit-transition-delay: 29ms;
+          transition-delay: 29ms;
+}
+
+.chapter2 section:last-of-type .ball.twelve {
+  -webkit-transition-delay: 32ms;
+          transition-delay: 32ms;
+}
+
+.chapter2 section:last-of-type .ball.thirteen {
+  -webkit-transition-delay: 35ms;
+          transition-delay: 35ms;
+}
+
+.chapter2 section:last-of-type .ball.fourteen {
+  -webkit-transition-delay: 38ms;
+          transition-delay: 38ms;
+}
+
+.chapter2 section:last-of-type .ball.fiveteen {
+  -webkit-transition-delay: 41ms;
+          transition-delay: 41ms;
+}
+
+.chapter2 section:last-of-type .ball.sixteen {
+  -webkit-transition-delay: 44ms;
+          transition-delay: 44ms;
+}
+
+.chapter2 section:last-of-type .ball.seventeen {
+  -webkit-transition-delay: 47ms;
+          transition-delay: 47ms;
+}
+
+.chapter2 section:last-of-type .ball.eighteen {
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+
+.chapter2 section:last-of-type .ball.nineteen {
+  -webkit-transition-delay: 53ms;
+          transition-delay: 53ms;
+}
+
+.chapter2 section:last-of-type .ball.twenty {
+  -webkit-transition-delay: 56ms;
+          transition-delay: 56ms;
 }
 /*# sourceMappingURL=main.css.map */

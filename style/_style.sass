@@ -80,12 +80,14 @@ header > p
     bottom: 20px
     right: -10px
 
-
-
-.chapter1
+.chapter1, .chapter2 section:first-of-type
     margin-left: 7.73vw
 
-    .chapter1bookmark
+
+.chapter1, .chapter2 
+    overflow: hidden
+
+    .chapter1bookmark, .chapter2bookmark
         font-size: 10.99px
         margin-top: 36.34vh
         margin-bottom: 47px
@@ -100,20 +102,133 @@ header > p
 
         span
             margin-right: 6em
-    
-// .chapter1 section:nth-of-type(2) > img
-//     height: 100vh
-//     width: 100vw
-//     position: absolute
-//     left: 0
-//     margin-bottom: 50vh
 
-.chapter1 section:nth-of-type(2) > div
-    height: 100vh
-    width: 100vw
-    margin-bottom: 50vh
-    position: absolute
-    left: 0
-    background-image: url("../img/Juul-Vrasdonk.jpg")
-    background-position: center
-    background-size: cover
+    
+
+    .picturecontainer
+        height: 100vh
+        width: 100vw
+        margin-bottom: 20.7vh
+        
+
+    .pictureme
+        height: 100%
+        width: 100%
+        position: absolute
+        left: 0
+        background-image: url("../img/Juul-Vrasdonk.jpg")
+        background-position: center
+        background-size: cover
+    section:nth-of-type(2) p
+        line-height: 1.8
+    
+    section:nth-of-type(2) p:first-of-type
+        margin-bottom: 48px
+    
+    section:nth-of-type(2) p:nth-of-type(2)
+        margin-bottom: 48px
+    
+    section:nth-of-type(2) p:nth-of-type(3)
+        background-color: #F6F6F6
+        padding: 5px 10px 5px 10px
+        color: #A3A3A3
+        border-radius: 10px
+        line-height: 1.25
+        margin-bottom: 20.7vh
+        strong
+            font-weight: 400
+            color: #000000
+    
+.chapter2 section:last-of-type
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    article
+        position: relative
+        width: 128px
+        height: 34.77px
+        border: 1px solid $black
+        border-radius: 50px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        strong
+            font-size: 24.42px
+
+        .line   
+            height: .79px
+            width: 11.06px
+            background-color: $black
+        .ball
+            height: 18.96px
+            width: 18.96px
+            background-color: $blue
+            border-radius: 50%
+            position: absolute
+            top: 7px
+            left: 53px
+            opacity: .1
+            transition: all 0.75s cubic-bezier(.71,0,.33,1.56) 0ms
+
+    article:hover .ball
+        left: 0
+    .ball.one 
+        opacity: 1
+    .ball.two 
+        transition-delay: 3ms
+      
+    .ball.three 
+        transition-delay: 6ms
+      
+    .ball.four
+        transition-delay: 9ms
+      
+    .ball.five
+        transition-delay: 11ms
+      
+    .ball.six
+        transition-delay: 14ms
+      
+    .ball.seven
+        transition-delay: 17ms
+      
+    .ball.eight 
+        transition-delay: 20ms
+      
+    .ball.nine 
+        transition-delay: 23ms
+      
+    .ball.ten
+        transition-delay: 26ms
+      
+    .ball.eleven
+        transition-delay: 29ms
+      
+    .ball.twelve
+        transition-delay: 32ms
+      
+    .ball.thirteen
+        transition-delay: 35ms
+      
+    .ball.fourteen
+        transition-delay: 38ms
+      
+    .ball.fiveteen
+        transition-delay: 41ms
+      
+    .ball.sixteen
+        transition-delay: 44ms
+      
+    .ball.seventeen
+        transition-delay: 47ms
+      
+    .ball.eighteen
+        transition-delay: 50ms
+      
+    .ball.nineteen
+        transition-delay: 53ms
+      
+    .ball.twenty
+        transition-delay: 56ms
+      
