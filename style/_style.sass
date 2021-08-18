@@ -80,7 +80,7 @@ header > p
     bottom: 20px
     right: -10px
 
-.chapter1, .chapter2 section:first-of-type
+.chapter1 section:first-of-type, .chapter2 section:first-of-type
     margin-left: 7.73vw
 
 
@@ -101,24 +101,20 @@ header > p
         margin-bottom: 36.34vh
 
         span
-            margin-right: 6em
-
-    
+            margin-right: 100%
 
     .picturecontainer
-        height: 100px
-        width: 100px
-        margin-bottom: 20.7vh
-        
-
-    .pictureme
         height: 100vh
         width: 100vw
-        position: absolute
-        left: 0
-        background-image: url("../img/Juul-Vrasdonk.jpg")
-        background-position: center
-        background-size: cover
+        margin-bottom: 10.7vh
+
+        .pictureme
+            height: 100%
+            width: 100%
+            background-image: url(../img/Juul-Vrasdonk.jpg)
+            background-position: center
+            background-size: cover
+
     section:nth-of-type(2) p
         line-height: 1.8
     
@@ -138,7 +134,7 @@ header > p
         strong
             font-weight: 400
             color: #000000
-    
+
 .chapter2 section:last-of-type
     display: flex
     flex-direction: column

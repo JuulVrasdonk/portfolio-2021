@@ -148,7 +148,7 @@ header > p {
   right: -10px;
 }
 
-.chapter1, .chapter2 section:first-of-type {
+.chapter1 section:first-of-type, .chapter2 section:first-of-type {
   margin-left: 7.73vw;
 }
 
@@ -174,21 +174,19 @@ header > p {
 }
 
 .chapter1 h2 span, .chapter2 h2 span {
-  margin-right: 6em;
+  margin-right: 100%;
 }
 
 .chapter1 .picturecontainer, .chapter2 .picturecontainer {
   height: 100vh;
   width: 100vw;
-  margin-bottom: 20.7vh;
+  margin-bottom: 10.7vh;
 }
 
-.chapter1 .pictureme, .chapter2 .pictureme {
+.chapter1 .picturecontainer .pictureme, .chapter2 .picturecontainer .pictureme {
   height: 100%;
   width: 100%;
-  position: absolute;
-  left: 0;
-  background-image: url("../img/Juul-Vrasdonk.jpg");
+  background-image: url(../img/Juul-Vrasdonk.jpg);
   background-position: center;
   background-size: cover;
 }
