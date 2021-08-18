@@ -246,6 +246,9 @@ header > p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(50px) invert(0);
+          backdrop-filter: blur(50px) invert(0);
 }
 
 .chapter2 section:last-of-type article strong {
@@ -267,12 +270,12 @@ header > p {
   top: 7px;
   left: 53px;
   opacity: .1;
-  -webkit-transition: all 0.75s cubic-bezier(0.71, 0, 0.33, 1.56) 0ms;
-  transition: all 0.75s cubic-bezier(0.71, 0, 0.33, 1.56) 0ms;
+  -webkit-transition: all 1s cubic-bezier(0.71, 0, 0.33, 0.56) 0ms;
+  transition: all 1s cubic-bezier(0.71, 0, 0.33, 0.56) 0ms;
 }
 
 .chapter2 section:last-of-type article:hover .ball {
-  left: 0;
+  left: 6px;
 }
 
 .chapter2 section:last-of-type .ball.one {
@@ -369,7 +372,7 @@ header > p {
           transition-delay: 53ms;
 }
 
-.chapter2 section:last-of-type .ball.twenty {
+.chapter2 section:last-of-type .ball.twent {
   -webkit-transition-delay: 56ms;
           transition-delay: 56ms;
 }

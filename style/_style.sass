@@ -106,14 +106,14 @@ header > p
     
 
     .picturecontainer
-        height: 100vh
-        width: 100vw
+        height: 100px
+        width: 100px
         margin-bottom: 20.7vh
         
 
     .pictureme
-        height: 100%
-        width: 100%
+        height: 100vh
+        width: 100vw
         position: absolute
         left: 0
         background-image: url("../img/Juul-Vrasdonk.jpg")
@@ -153,6 +153,8 @@ header > p
         display: flex
         justify-content: space-around
         align-items: center
+        z-index: 999
+        backdrop-filter: blur(50px) invert(0)
         strong
             font-size: 24.42px
 
@@ -169,10 +171,10 @@ header > p
             top: 7px
             left: 53px
             opacity: .1
-            transition: all 0.75s cubic-bezier(.71,0,.33,1.56) 0ms
+            transition: all 1s cubic-bezier(.71,0,.33,0.56) 0ms
 
     article:hover .ball
-        left: 0
+        left: 6px
     .ball.one 
         opacity: 1
     .ball.two 
@@ -229,6 +231,6 @@ header > p
     .ball.nineteen
         transition-delay: 53ms
       
-    .ball.twenty
+    .ball.twent
         transition-delay: 56ms
       
