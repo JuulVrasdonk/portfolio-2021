@@ -1,6 +1,14 @@
 /**********
     Colors
         ********/
+.textcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: -webkit-max-content;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -99,7 +107,7 @@ header nav ul li:first-of-type a svg, header nav ul li:last-of-type a svg {
   width: 12px;
 }
 
-header h2, header h1 {
+header > span:first-of-type, header > span:nth-of-type(2), header > div span:first-of-type, header > span:last-of-type, header > h2 {
   margin-left: 7.73vw;
 }
 
@@ -107,24 +115,31 @@ header h2 {
   font-size: 32.9432px;
 }
 
-header h2:first-of-type {
+header > span:first-of-type {
   margin-top: 14.9vh;
   margin-bottom: 20px;
 }
 
-header h2:nth-of-type(2) {
+header span:nth-of-type(2) h2 {
   margin-bottom: 20px;
 }
 
-header h2:nth-of-type(2) > a {
+header span:nth-of-type(2) h2 > a {
   text-decoration: underline;
 }
 
-header h2 > span {
-  font-weight: 300;
+header div span:nth-of-type(2) h2 {
+  margin: 0 .3em;
+  font-weight: 100;
 }
 
-header h1 {
+.textwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header span h1 {
   font-size: 98.8296px;
   text-transform: uppercase;
   -webkit-transform-origin: top left;
@@ -135,6 +150,11 @@ header h1 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   height: 530px;
+}
+
+.rotatefix {
+  width: 63%;
+  height: 540px;
 }
 
 header > p {

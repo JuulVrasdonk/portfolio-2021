@@ -28,6 +28,46 @@ const locoScroller = new LocomotiveScroll({
 //                              Hier de scrolltrigger code
 // *********************************************************************************************
 
+function headingscene () {
+  let headingtl = gsap.timeline();
+  headingtl.from('.appearingtext', {
+    y: 100,
+    duration: .3,
+    stagger: .5,
+    ease: Power4.easeOut
+  })
+  .from('.textduplication', {
+    opacity: 0
+  }, '-=0.07')
+  .from('.textduplication', {
+    y: -60,
+    duration: .3,
+    ease: Back.easeOut.config(1.7)
+  })
+  .from('.appearingtext2', {
+    y: 100,
+    duration: .3,
+    ease: Power4.easeOut
+  })
+  .to('.fontweight', {
+    fontWeight: 500,
+    duration: 1
+  })
+  .from('.appearingtext90deg', {
+    x: 300,
+    duration: .3,
+    ease: Back.easeOut.config(1.7)
+  }, '<.8')
+
+  .from('.navbtn', {
+    opacity: 0,
+    duration: 2,
+    ease: Power4.easeOut
+  })
+}
+
+let master = gsap.timeline()
+.add(headingscene())
 
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
