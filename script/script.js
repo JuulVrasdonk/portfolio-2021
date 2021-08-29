@@ -41,7 +41,7 @@ function headingscene () {
     opacity: 0
   }, '-=0.07')
   .from('.textduplication', {
-    y: -60,
+    y: -62,
     duration: .3,
     ease: Back.easeOut.config(1.7)
   })
