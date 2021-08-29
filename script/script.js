@@ -31,8 +31,9 @@ const locoScroller = new LocomotiveScroll({
 function headingscene () {
   let headingtl = gsap.timeline();
   headingtl.from('.appearingtext', {
-    y: 100,
+    y: 200,
     duration: .3,
+    rotation: 30,
     stagger: .5,
     ease: Power4.easeOut
   })
@@ -45,20 +46,38 @@ function headingscene () {
     ease: Back.easeOut.config(1.7)
   })
   .from('.appearingtext2', {
-    y: 100,
+    y: 200,
+    rotation: 30,
     duration: .3,
     ease: Power4.easeOut
-  })
-  .to('.fontweight', {
-    fontWeight: 500,
-    duration: 1
   })
   .from('.appearingtext90deg', {
     x: 300,
     duration: .3,
-    ease: Back.easeOut.config(1.7)
+    rotation: 30,
+    ease: Power4.easeOut
   }, '<.8')
-
+  .to('.wordmark', {
+    y: -100,
+    duration: 0.5
+  })
+  .to('.wordmark',{
+    x: 200,
+    duration: 0.01
+  })
+  .to('.wordmark', {
+    y: 100,
+    duration: 0.01
+  })
+  .to('.wordmark', {
+    x: 0,
+    duration: 0.01,
+    color: "#147CE5"
+  })
+  .to('.wordmark', {
+    y: 0,
+    duration: 0.5
+  })
   .from('.navbtn', {
     opacity: 0,
     duration: 2,
